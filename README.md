@@ -1,1 +1,1 @@
-# JS0404
+# JS practice
