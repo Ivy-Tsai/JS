@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>JS 改變 HTML的內容</h1>
+  <p id="demo">
+    我現在要用JS改變HTML元素的內容囉
+  </p>
+
+  <script>
+    function F1()
+    {
+      x=document.getElementById("demo"); //找到元素
+      x.innerHTML="我是隱藏版訊息！"//改變內容
+    }
+  </script>
+
+  <button type="button" onclick="F1()">點我看隱藏訊息</button>
+</body>
+</html>

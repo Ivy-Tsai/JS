@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>JS改變 HTML元素的樣式</h1>
+  <p id="demo">
+    我是一段會變顏色的字唷
+  </p>
+
+  <script>
+    function color()
+    {
+      x=document.getElementById("demo") //找到元素
+      x.style.color= "#ff0000"; //改樣式
+    }
+  </script>
+
+  <button type="button" onclick="color()">點這裡看我變顏色！</button>
+</body>
+</html>
