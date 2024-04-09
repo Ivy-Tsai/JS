@@ -10,19 +10,19 @@
   <script>
     function bulb()
     {
-      Element=document.getElementById('image')
-      if (Element.src.match("bulbon"))
+      element=document.getElementById('image')
+      if (element.src.match("bulbon"))
       {
-        Element.src="/image/bulboff.gif";
+        element.src="/image/bulboff.gif";
       }
       else
       {
-        Element.src="/image/bulbon.gif";
+        element.src="/image/bulbon.gif";
       }
     }
   </script>
 
-  <img id="image" onclick="bulb" src="/image/bulboff.gif" width="180" height="250">
+  <img id="image" onclick="bulb()" src="/image/bulboff.gif" width="180" height="250">
   <p>點擊打開燈泡！</p>
 
 </body>
