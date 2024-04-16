@@ -11,20 +11,20 @@ let person = {
   haircolor : "black"
 }
 //訪問屬性 兩種方式
-console.log(person.firstName + '今年' + person.age + '歲')
-console.log(person["firstName"] + "今年" + person["age"] + "歲")
+console.log(person.firstName + '今年' + person.age + '歲')        //抓屬性 (常用)
+console.log(person["firstName"] + "今年" + person["age"] + "歲") //陣列“字串” （CSS會用到 因為字串裡面的字可以-分開 ex. "first-name"）
 
 //方法
 //對象方法是一個 ”函數“，且作為一個屬性值
-let person1 = {
+let person2 = {
   firstName : "Ivy",
   lastName  : "Tsai",
   fullName  : function()
   {
-    return person1.firstName + " " + this.lastName //（主要）this.lastName v.s person1.lastName?
+    return this.firstName + " " + this.lastName // 用this可抓object，就算改名字也沒差
   }
 }
-console.log(person1.fullName()) //only person1.fullName
+console.log(person2.fullName()) 
 //let abc = person1.fullName()
 //console.log(abc)
 

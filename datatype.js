@@ -1,4 +1,5 @@
-//字串內使用引號
+//數據類型
+//字串內使用引號 -> 跳脫字元
 let a = "It's good"
 let b = 'It\'s good'
 let c = "I am \"Ivy\""
@@ -19,8 +20,8 @@ console.log(y)
 console.log(z)
 
 //Array
-// let arr1 = ['Tom','Jeff','Andy']
-// console.log(arr1)
+let arr1 = ['Tom','Jeff','Andy']
+console.log(arr1[0])
 
 let i
 let fruit = new Array()
@@ -39,7 +40,7 @@ console.log(person.id)
 //undefined：表示變數“不含有值”。 可以將變數的值設為null。
 let type
 let food = "toast"
-console.log(type)
+console.log(type) //undefined
 console.log(food)
-let drink = null
+let drink = null   // 何時會設null？ 設定預設值
 console.log(drink)

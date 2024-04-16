@@ -31,3 +31,5 @@ let b = new String("Ivy")     //object
 
 console.log(typeof a,typeof b)
 
+//不要創建 String 對象。會拖慢執行速度，且可能產生其他副作用？ 
+//那什麼時候需要把字串定義成object？ Ａ：基本上不太會

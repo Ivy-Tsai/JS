@@ -19,11 +19,14 @@ food2()
 
 
 
+
 //全域：在函式外宣告
 //若變數在函式內沒宣告，屬於全域變數
+
 let fruit1 = "apple" //全域變數
-    fruit5 = "orange" //沒宣告 屬於全域變數
+
 function food1(){
+  fruit5 = "orange" //沒宣告 屬於全域變數
   console.log(fruit1) //apple
 }
 food1()
@@ -42,3 +45,24 @@ function food3(){
 food3()
 
 
+
+//作用域  var / let，
+function varTest() {
+  var x = 1;
+  if (true) {
+      var x = 2;       // 同样的變數 X
+      console.log(x)  // 2
+  }
+  console.log(x)  // 2
+}
+varTest()
+
+function letTest() {
+  let x = 1;
+  if (true) {
+      let x = 2;       // 不同的變數 X    
+      console.log(x)  // 2  
+  }
+  console.log(x)  // 1
+}
+letTest()
