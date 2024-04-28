@@ -28,7 +28,7 @@ console.log(age)
 console.log(job)
 console.log(a) //undefined
 console.log(b) //undefined
-console.log(c) //2
+console.log('c='+c) //2
 console.log('d='+d) //undefined
 
 
